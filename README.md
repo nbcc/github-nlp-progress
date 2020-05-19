@@ -4,9 +4,9 @@
 
 ### 词法分析
 #### 数据集
-    - [分词](lexical-analysis/word-segment.md)   
-    - [词性标注](lexical-analysis/part-of-speech-tagging.md)
-    - [命名实体](lexical-analysis/name-entity-recognition.md)
+&emsp;- [分词](lexical-analysis/word-segment.md)   
+&emsp;- [词性标注](lexical-analysis/part-of-speech-tagging.md)
+&emsp;- [命名实体](lexical-analysis/name-entity-recognition.md)
 #### 榜单
     - [文本情感分析榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
 
