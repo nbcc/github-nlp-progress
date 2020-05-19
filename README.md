@@ -3,11 +3,11 @@
 ## 中文NLP开源数据集
 
 ### 词法分析
-* [x] 数据集
+#### 数据集
     - [分词](lexical-analysis/word-segment.md)   
     - [词性标注](lexical-analysis/part-of-speech-tagging.md)
     - [命名实体](lexical-analysis/name-entity-recognition.md)
-* [x] 榜单
+#### 榜单
     - [文本情感分析榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
 
 ### 句法分析
