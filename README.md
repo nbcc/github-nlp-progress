@@ -10,26 +10,28 @@
 ### 榜单
 - [文本情感分析榜单](http://bjyzai.epc.baidu.com/aistudio/competition/detail/33)
 
-### 句法分析
-#### &emsp;&emsp;数据集
+
+## 句法分析
+### 数据集
 - [依存句法](dependency-parsing/dependency-parsing.md)
-#### &emsp;&emsp;榜单
+### 榜单
 - [依存句法榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
-### 语义解析
-#### &emsp;&emsp;数据集
+## 语义解析
+### 数据集
 - [Text-to-SQL](semantic-parsing/semantic-parsing.md)
-#### &emsp;&emsp;榜单
+### 榜单
 - [语义解析榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
-### 文本分类
-#### &emsp;&emsp;数据集
+## 文本分类
+### 数据集
 - [文本分类](text-classification/text-classification.md)
-#### &emsp;&emsp;榜单
+### 榜单
 - [文本分类榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
-### 文本相似度
-#### &emsp;&emsp;数据集
+## 文本相似度
+### 数据集
 - [文本相似度](text-similarity/text-similarity.md)
-#### &emsp;&emsp;榜单
+### 榜单
 - [文本相似度榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
+
 ### 情感分析
 - [句子级情感分类](sentiment-analysis/sentiment-classification.md)
 - [评价对象级的情感分类](sentiment-analysis/aspect-level-sentiment-classification.md)
