@@ -30,8 +30,6 @@
 - [文本相似度](text-similarity/text-similarity.md)
 >榜单
 - [文本相似度榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
-- * [ ] 榜单
-- [文本相似度榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
 ### 情感分析
 - [句子级情感分类](sentiment-analysis/sentiment-classification.md)
 - [评价对象级的情感分类](sentiment-analysis/aspect-level-sentiment-classification.md)
