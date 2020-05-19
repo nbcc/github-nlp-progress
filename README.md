@@ -3,8 +3,6 @@
 ## 中文NLP开源数据集
 
 ### 词法分析
-  ####   
- 
 >数据集
  - [分词](lexical-analysis/word-segment.md)   
  - [词性标注](lexical-analysis/part-of-speech-tagging.md)
