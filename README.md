@@ -8,7 +8,7 @@
 - &emsp;&emsp;[词性标注](lexical-analysis/part-of-speech-tagging.md)
 - &emsp;&emsp;[命名实体](lexical-analysis/name-entity-recognition.md)
 #### &emsp;&emsp;榜单
-- &emsp;&emsp;[文本情感分析榜单](http://bjyz-ai.epc.baidu.com/aistudio/competition/detail/33)
+- &emsp;&emsp;[文本情感分析榜单](http://bjyzai.epc.baidu.com/aistudio/competition/detail/33)
 
 
 ### 句法分析
