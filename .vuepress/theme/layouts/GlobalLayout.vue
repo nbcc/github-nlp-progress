@@ -16,6 +16,9 @@
                 </div>
             </div>
         </header>
+        <div class="tabs" :class="tabsFix ? 'tabs-fix' : ''" v-if="tabValue">
+            <span v-for="(item, index) in tabs" :key="index" :class="item.value === tabValue ? 'tabs-active' : ''" @click="onClickTab(item.path)">{{item.label}}</span>
+        </div>
         <component :is="layout"></component>
         <footer class="bk-dark">
             <div class="footer-content">
@@ -27,6 +30,16 @@
 
 <script>
 export default {
+    data() {
+        return {
+            tabValue: 1,
+            tabsFix: false,
+            tabs: [
+                {path: '/', label: '数据集', value: 1},
+                {path: '/list/list.html', label: '榜单', value: 2}
+            ]
+        };
+    },
     computed: {
         layout() {
             if (this.$page.path) {
@@ -38,6 +51,41 @@ export default {
                 return 'Layout';
             }
             return 'NotFound';
+        }
+    },
+    beforeRouteEnter(to, from, next) {
+        next(vm => {
+            vm.handleChangeTab(to.path);
+        });
+    },
+    mounted() {
+        window.addEventListener('scroll', () => {
+            const top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+            if (top > 288) {
+                this.tabsFix = true;
+            } else {
+                this.tabsFix = false;
+            }
+        });
+    },
+    methods: {
+        handleChangeTab(path) {
+            let hasTab = false;
+            this.tabs.forEach(item => {
+                if (item.path === path) {
+                    this.tabValue = item.value;
+                    hasTab = true;
+                }
+            });
+            if (!hasTab) {
+                this.tabValue = '';
+            }
+            this.$page.hasTab = this.tabValue !== '';
+        },
+        onClickTab(path) {
+            if (this.$router.currentRoute.path !== path) {
+                this.$router.push(path);
+            }
         }
     }
 };
@@ -111,7 +159,7 @@ footer
             &:first-of-type
                 margin-right 20px
 .btn
-    height 40pxs
+    height 40px
     border 1px solid #fff
     color #fff
     line-height 38px
@@ -123,6 +171,36 @@ footer
     &:hover
         background #fff
         color #071B34
+.tabs
+    height 60px
+    line-height 60px
+    text-align center
+    background #fff
+    box-shadow 0 2px 10px 0 rgba(0, 0, 0, .05)
+    font-size 20px
+    color #333
+    &-fix {
+        position fixed
+        top 0
+        left 0
+        right 0
+        z-index 1
+    }
+    span
+        padding 0 5px
+        margin-right 80px
+        border-bottom 2px solid transparent
+        height 100%
+        box-sizing border-box
+        display inline-block
+        cursor pointer
+        &:last-of-type
+            margin-right 0
+        &:hover,
+        &.tabs-active
+            color #0173EB
+            border-color #0173EB
+
 
 @media (max-width: 719px)
     footer .footer-content p

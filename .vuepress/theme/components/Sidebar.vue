@@ -27,7 +27,7 @@ export default {
     mounted() {
         window.addEventListener('scroll', () => {
             let top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
-            if (top > 424) {
+            if (top > (this.$page.hasTab ? 288 : 424)) {
                 this.sideAbs = false;
             } else {
                 this.sideAbs = true;
@@ -40,7 +40,7 @@ export default {
 .sidebar-wrap
     left 50%
     margin auto
-    top 0
+    top 60px
     width 200px
     padding-right 20px
     position fixed
@@ -64,6 +64,8 @@ export default {
             margin 0
         *
             font-size 12px!important
+        > .sidebar-links
+            padding-bottom 80px;
         .sidebar-heading,
         .sidebar-heading *
             padding 0
