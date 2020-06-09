@@ -29,21 +29,7 @@
 - <strong>基于该数据集发表的相关论文：</strong> 
     - Jing Chen, Qingcai Chen, Xin Liu et al. 2018, Oct. The BQ Corpus: A Large-scale Domain-specific Chinese Corpus For Sentence Semantic Equivalence Identification. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing.
 
-### 3. AFQMC
-- <strong>数据集简介：</strong>
-
-   蚂蚁金融语义相似度（Ant Financial Question Matching Corpus, AFQMC）数据集，是中文语言理解测评基准（CLUE benchmark）上的一个评测集，主要是蚂蚁金服金融领域的问题匹配数据。    
-   
-- <strong>数据集详情：</strong>
-
-    |  名称 | 规模 | 创建日期 | 作者 | 单位 | 论文 | 下载 | 评测 |
-    | :---: | :---:| :---: | :---: | :---: | :---: | :---: | :---: |
-    | AFQMC | 4.25万文本数据 | 2020年 | Liang Xu et al. | CLUE Team | [链接](https://arxiv.org/abs/2004.05986) | [链接](https://github.com/CLUEbenchmark/CLUE)| [链接](https://www.cluebenchmarks.com/index.html) |
-
-- <strong>基于该数据集发表的相关论文：</strong> 
-   - Liang Xu, Xuanwei Zhang, Lu Li et al. 2020, Apr. CLUE: A Chinese Language Understanding Evaluation Benchmark.
-   
-### 4. PAWS-X
+### 3. PAWS-X
 - <strong>数据集简介：</strong>
 
    谷歌发布的包含 7 种语言释义对的数据集，即：PAWS（英语） 与 PAWS-X（多语），其中中文训练集49401对，开发集2000对，测试集2000对。数据集里包含了释义对和非释义对，即识别一对句子是否具有相同的释义（含义），特点是具有高度重叠词汇，对于进一步提升模型对于强负例的判断很有帮助。
